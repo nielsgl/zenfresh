@@ -73,4 +73,11 @@ if wait_for_user
 
 end
 
+
+puts "Install Ruby? [Y/n]
+if wait_for_user
+  system('brew install rbenv ruby-build')
+
+end
+
 puts "Done"
