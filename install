@@ -1,4 +1,4 @@
-
+#!/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby
 
 def getc  # NOTE only tested on OS X
   system "/bin/stty raw -echo"
@@ -80,7 +80,7 @@ end
 
 puts "Install Pretzo? [Y/n]"
 if wait_for_user
-  
+
 end
 
 puts "Install Ruby? [Y/n]"
