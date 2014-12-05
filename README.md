@@ -26,6 +26,8 @@ More Casks
 * pycharm-pro, lighttable, vagrant, charles, easyfind
 * chromecast
 * tilemill
+* brew cask install postgres
+* then: brew install postgres
 
 Cleanup
 
