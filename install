@@ -47,6 +47,9 @@ end
 puts "Install Homebrew packages? [Y/n]"
 if wait_for_user
   system('brew install htop')
+  puts 'Running post-installation commands'
+  system('sudo chown root:wheel /usr/local/Cellar/htop-osx/0.8.2.2/bin/htop')
+  system('sudo chmod u+s /usr/local/Cellar/htop-osx/0.8.2.2/bin/htop')
 end
 
 puts "Install Homebrew Cask? [Y/n]"
