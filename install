@@ -73,6 +73,15 @@ if wait_for_user
 
 end
 
+puts "Install Zsh? [Y/n]"
+if wait_for_user
+  system('brew install zsh')
+end
+
+puts "Install Pretzo? [Y/n]"
+if wait_for_user
+  
+end
 
 puts "Install Ruby? [Y/n]
 if wait_for_user
