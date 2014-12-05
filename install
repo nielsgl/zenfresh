@@ -1,0 +1,37 @@
+#!/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby
+
+def getc  # NOTE only tested on OS X
+  system "/bin/stty raw -echo"
+  if STDIN.respond_to?(:getbyte)
+    STDIN.getbyte
+  else
+    STDIN.getc
+  end
+ensure
+  system "/bin/stty -raw echo"
+end
+
+def wait_for_user
+  puts
+  puts "Press RETURN to continue or any other key to abort"
+  # we test for \r and \n because some stuff does \r instead
+  # as well as Y and y
+  # abort unless [10, 13, 89, 121].include? getc
+  [10, 13, 89, 121].include? getc
+end
+
+puts "ZenFresh Installer"
+
+puts "Setup Git? [Y/n]"
+if wait_for_user
+  puts "yes, let's do it"
+  puts "Enter your name:"
+  `git config --global user.name "#{gets.chomp}"`
+  puts "Enter your email:"
+  `git config --global user.email "#{gets.chomp}"`
+
+else
+  puts "nope, not going to happen"
+end
+
+puts "Done"
