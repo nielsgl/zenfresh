@@ -64,7 +64,13 @@ if wait_for_user
   system('brew cask update')
 end
 
-#puts "Install Cask Packages? [Y/n]"
+puts "Install Cask Packages? [Y/n]"
+if wait_for_user
+  system('brew cask install google-chrome')
+  system('brew cask install hipchat')
+  system('brew cask install atom')
+  system('brew cask install skype')
 
+end
 
 puts "Done"
