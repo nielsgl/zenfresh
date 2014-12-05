@@ -1,4 +1,4 @@
-#!/System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby
+
 
 def getc  # NOTE only tested on OS X
   system "/bin/stty raw -echo"
@@ -39,6 +39,10 @@ if wait_for_user
   system('ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"')
 end
 
+puts "Update Homebrew? [Y/n]"
+if wait_for_user
+  system('brew update')
+end
 
 
 puts "Done"
