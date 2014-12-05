@@ -30,7 +30,63 @@ More Casks
 
 * Brew tap phinze/homebrew-cask
 * brew install autoconf brew-cask bash-completion cmake doxygen fish freetds freetype gdbm git imagemagick jpeg libevent libpng libtool libyaml memcached mysql phantomjs pkg-config rbenv readline ruby-build ssh-copy-id taglib tmux wget tree;
+* onepassword, panic-unison, vyprvpn, codekit
 
+* brew cask install adobe-creative-cloud
+* open /opt/homebrew-cask/Caskroom/adobe-creative-cloud/latest
+* brew tap homebrew/binary
+* brew install packer
+* brew install tree
+* sudo easy_install Pygments
+* sudo easy_install stormssh
+* brew install watch gnu-sed coreutils fortune aspell libpng libjpeg
+
+```
+$ brew cask install appcleaner
+$ brew cask install archey
+$ brew cask install arq
+$ brew cask install backblaze-downloader
+$ brew cask install backuploupe
+$ brew cask install bartender
+$ brew cask install bittorrent-sync
+$ brew cask install coconutbattery
+$ brew cask install codekit
+$ brew cask install commandq
+$ brew cask install dropbox
+$ brew cask install electric-sheep
+$ brew cask install firefox
+$ brew cask install flash
+$ brew cask install flavours
+$ brew cask install flip4mac
+$ brew cask install fluid
+$ brew cask install flux
+$ brew cask install gfxcardstatus
+$ brew cask install github
+$ brew cask install google-chrome
+$ brew cask install google-drive
+$ brew cask install iterm2
+$ brew cask install jumpcut
+$ brew cask install little-snitch
+$ brew cask install nottingham
+$ brew cask install p4merge
+$ brew cask install paparazzi
+$ brew cask install perian
+$ brew cask install pupil
+$ brew cask install rdio
+$ brew cask install secrets
+$ brew cask install sequel-pro
+$ brew cask install sequential
+$ brew cask install shortcat
+$ brew cask install sophos-anti-virus-home-edition
+$ brew cask install sublime-text
+$ brew cask install superduper
+$ brew cask install thisservice
+```
+
+* fortune (unix) for random messages
+* http://obihann.github.io/archey-osx/
+* https://www.perpetual-beta.org/weblog/setting-up-new-mac.html
+* https://news.ycombinator.com/item?id=7694005
 
 ### Cleanup
 
