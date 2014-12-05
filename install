@@ -90,6 +90,11 @@ if wait_for_user
   # git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 end
 
+puts "Install SQLite3 [Y/n]"
+if wait_for_user
+  system('brew install sqlite3')
+end
+
 puts "Install MySQL [Y/n]"
 if wait_for_user
   system('brew install mysql')
