@@ -52,7 +52,11 @@ end
 puts "Install Homebrew Cask? [Y/n]"
 if wait_for_user
   system('brew install caskroom/cask/brew-cask')
+  system('brew cask doctor')
+  system('brew cask update')
 end
+
+#puts "Install Cask Packages? [Y/n]"
 
 
 puts "Done"
