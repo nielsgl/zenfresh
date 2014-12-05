@@ -70,7 +70,7 @@ if wait_for_user
   system('brew cask install hipchat')
   system('brew cask install atom')
   system('brew cask install skype')
-
+  system('brew cask install Caskroom/cask/sequel-pro')
 end
 
 puts "Install Zsh? [Y/n]"
@@ -83,10 +83,20 @@ if wait_for_user
   
 end
 
-puts "Install Ruby? [Y/n]
+puts "Install Ruby? [Y/n]"
 if wait_for_user
   system('brew install rbenv ruby-build')
 
+  # git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 end
+
+puts "Install MySQL [Y/n]"
+if wait_for_user
+  system('brew install mysql')
+  system('ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents')
+  system('launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist')
+  system('mysql_secure_installation')
+end
+
 
 puts "Done"
