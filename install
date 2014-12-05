@@ -52,6 +52,11 @@ if wait_for_user
   system('sudo chmod u+s /usr/local/Cellar/htop-osx/0.8.2.2/bin/htop')
 end
 
+puts "Install wget? [Y/n]"
+if wait_for_user
+  system('brew install wget')
+end
+
 puts "Install Homebrew Cask? [Y/n]"
 if wait_for_user
   system('brew install caskroom/cask/brew-cask')
