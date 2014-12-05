@@ -98,5 +98,12 @@ if wait_for_user
   system('mysql_secure_installation')
 end
 
+puts "Install PostgreSQL [Y/n]"
+if wait_for_user
+  system('brew install postgresql')
+  # system('ARCHFLAGS="-arch x86_64" gem install pg')
+  # ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+  # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+end
 
 puts "Done"
