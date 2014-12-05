@@ -44,5 +44,15 @@ if wait_for_user
   system('brew update')
 end
 
+puts "Install Homebrew packages? [Y/n]"
+if wait_for_user
+  system('brew install htop')
+end
+
+puts "Install Homebrew Cask? [Y/n]"
+if wait_for_user
+  system('brew install caskroom/cask/brew-cask')
+end
+
 
 puts "Done"
