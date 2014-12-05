@@ -111,4 +111,10 @@ if wait_for_user
   # launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 end
 
+print "Tapping Homebrew Science..."
+system('brew tap homebrew/science')
+puts "done."
+
+
+
 puts "Done"
